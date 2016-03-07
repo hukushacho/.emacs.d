@@ -1,5 +1,5 @@
 ;; ---------------------------------------------------------
-;; YaTeX のèå
+;; YaTeX の設定
 ;; ---------------------------------------------------------
    
 ;; Add library path
@@ -16,3 +16,7 @@
   '(("xdvi" . ".dvi")                   
       ("ghostview\\|gv" . ".ps")
       ("acroread\\|pdf\\|Preview\\|open" . ".pdf")))
+
+;; Disable backup files
+
+(setq make-backup-files nil)

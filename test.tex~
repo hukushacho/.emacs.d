@@ -1,0 +1,9 @@
+\documentclass{jarticle}
+\begin{document}
+test.texを追加したった
+<<<<<<< HEAD
+$\phi$は壊れたね
+=======
+$\theta$は遊んでくれたよ
+>>>>>>> be5a06fedc99f46c3ea901b685edaed0756a8301
+\end{document}
