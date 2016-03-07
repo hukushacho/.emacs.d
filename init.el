@@ -20,3 +20,9 @@
 ;; Disable backup files
 
 (setq make-backup-files nil)
+
+;;--------------------------------------------------
+;; web-mode configuration
+;;--------------------------------------------------
+
+(add-to-list 'load-path "~/.emacs.d/site-lisp/web-mode")
