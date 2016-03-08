@@ -36,6 +36,7 @@
   "Hooks for Web mode."
 
   ;; indent
+  (setq web-mode-markup-indent-offset 2)
   (setq web-mode-html-offset   2)
   (setq web-mode-style-padding 2)
   (setq web-mode-css-offset    2)
@@ -50,8 +51,13 @@
   ;0=no auto-closing
   ;1=auto-close with </
   ;2=auto-close with > and </
-  
-  (setq web-mode-tag-auto-close-style 2)
+
+  (setq web-mode-enable-auto-closing t)
+  (setq web-mode-tag-auto-close-style 1)
+
+  ;; tag color
+
+  (set-face-attribute 'web-mode-html-tag-bracket-face nil :foreground "#FF7400")
 )
 
 (add-hook 'web-mode-hook 'web-mode-hook)
