@@ -1,4 +1,4 @@
-;;--------------------------------------------------
+					;A;--------------------------------------------------
 ;; Global key binding
 ;;--------------------------------------------------
 
@@ -69,3 +69,13 @@
 )
 
 (add-hook 'web-mode-hook 'web-mode-hook)
+
+;;;;;;;;;;;;;;;;;;;;;;;
+;;; ess configuration
+;;;;;;;;;;;;;;;;;;;;;;;
+
+(add-to-list 'load-path "/usr/local/Cellar/ess/15.09-2")
+[cpp](require 'ess-site)[/cpp]
+(add-to-list 'auto-mode-alist '("\\.[rR]$" . R-mode))
+(autoload 'R-mode "ess-site" "Emacs Speaks Statistics mode" t)
+(autoload 'R "ess-site" "start R" t)
